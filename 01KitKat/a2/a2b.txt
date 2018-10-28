@@ -1,0 +1,14 @@
+FALSCH:
+Ausgabe: Programmieren
+1: %include <stdio.h>
+2:
+3: int main(void)
+4: {
+5: printf(Proggen);
+6: }
+
+Fehler:
+Zeile 1: % muss # sein
+Zeile 5: In den Klammern müsste "Programmieren" stehen. Die Anführungszeichen sind wichtig.
+Zeile 6: Am Ende der main Funktion müsste return 0; stehen
+Zeile 7: Hier stünde dann } aus Zeile 6

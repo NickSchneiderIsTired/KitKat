@@ -1,0 +1,19 @@
+1. Was bewirkt die Umwandlungsangabe %.8i in der Formatzeichenkette von printf?
+Der Integer Wert wird in 8 Stellen ausgegeben.
+
+2. Was bewirkt die Umwandlungsangabe %10f in der Formatzeichenkette von printf?
+Der Float Wert wird in 8 Stellen als Festkommazahl ausgegeben.
+
+3. Ist %2e eine gültige Umwandlungsangabe in der Formatzeichenkette von printf? Wenn
+nein, warum?
+Der Float Wert wird in 8 Stellen als Fließkommazahl ausgegeben.
+
+4. Ist %h eine gültige Umwandlungsangabe in der Formatzeichenkette von printf?Wenn nein,
+warum?
+Nein, weil h kein Datentyp ist. 
+
+5. Welche Ausgabe bewirkt die Anweisung printf("%.5i ABC %.1f", 11, 123.123); ?
+00011 ABC 123.1
+
+6. Welche Ausgabe bewirkt die Anweisung printf("%05.2f", 1.0); ?
+01.00

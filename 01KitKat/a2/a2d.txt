@@ -1,0 +1,14 @@
+FALSCH:
+1: #include 'stdio.h'
+2:
+3: int main(void)
+4: {
+5: char a = 'X';
+6: printf(d);
+7: return 0;
+
+Fehler:
+Zeile 1: stdio.h muss in <> klammern stehen, nicht in ''
+Zeile 5: X muss a sein damit die ausgabe stimmt
+Zeile 6: nach printf muss ("%c", a) stehen
+Zeile 8: } am Ende der main Funktion fehlt
