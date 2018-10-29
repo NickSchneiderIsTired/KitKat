@@ -1,0 +1,7 @@
+1. Mit welchem Kommandozeilenbefehl führt man ein Programm a mit den Kommandozeilenparametern
+-x und y aus?
+a.exe -x y
+
+2. Mit welchem Kommandozeilenbefehl kompiliert man die Quellcode-Datei a.c und speichert
+den Maschinencode in der Datei p?
+gcc a.c -o p.exe -ansi -pedantic -Wall -Wextra

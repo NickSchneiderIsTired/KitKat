@@ -1,0 +1,14 @@
+FALSCH:
+Ausgabe: 17.33
+1: int main
+2: {
+3: double d = 17,33;
+4: println("%i",d);
+5: return 0;
+6: }
+
+Fehler:
+Zeile 0: Zu Beginn des codes müsste mit #include <stdio.h> die Bibliothek implementiert werden, die für die printf Funktion benötigt wird.
+Zeile 1: Hinter dem main fehlt (void)
+Zeile 3: , muss als . geschrieben werden
+Zeile 4: println müsste printf sein, %i müsste %.2f sein

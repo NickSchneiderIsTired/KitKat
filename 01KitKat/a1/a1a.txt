@@ -1,0 +1,28 @@
+1. Wie lautet die Anweisung, um zwei Variablen x und y vom Datentyp double in einer Zeile
+zu deklarieren?
+double x, y;
+
+2. Wie lautet die Anweisung, um einer Zeichen-Variable b das ASCII-Zeichen ) als Wert
+zuzuweisen?
+b = ')';
+
+3. Geben Sie die Konstante 345e-3 in Festkommaschreibweise an.
+0.345
+
+4. Welchen Datentyp hat die Konstante -123?
+Integer (int)
+
+5. Ist -345E-13 eine gültige Konstante?Wenn ja, von welchem Datentyp?Wenn nein, warum?
+Ja, double.
+
+6. Ist "--1" eine gültige Konstante? Wenn ja, von welchem Datentyp? Wenn nein, warum?
+Nein, weil die Syntax nur maximal ein vorzeichen erlaubt.
+
+7. Ist '\n' eine gültige Konstante? Wenn ja, von welchem Datentyp? Wenn nein, warum?
+Nein, da \n für einen Zeilenumbruch steht. Korrekt wäre '\\n'.
+
+8. Welchen Wert hat der arithmetische C-Ausdruck 1 + (2 * 1) - (1 / 1) + (1 * 2 / 3) ?
+2
+
+9. Mit welcher Wertzuweisung verdoppelt man den Wert einer positiven Zahl-Variable x?
+x *= 2;

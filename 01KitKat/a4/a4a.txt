@@ -1,0 +1,1 @@
+double mittelwertBerechnen(double zahl_1, double zahl_2, double zahl_3);

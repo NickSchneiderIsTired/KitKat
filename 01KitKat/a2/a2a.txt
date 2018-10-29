@@ -1,0 +1,11 @@
+FALSCH:
+1: double MAIN{void}
+2: [
+3: Return (12)
+4: ]
+
+Fehler:
+Zeile 1: main rückgabewert ist int nicht double, MAIN muss main heißen und die geschweiften Klammern müssen normale Klammern sein.
+Zeile 2: [ muss { sein
+Zeile 3: return wird klein geschrieben, ; am Ende fehlt
+Zeile 4: ] muss } sein
