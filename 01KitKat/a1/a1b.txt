@@ -2,13 +2,13 @@
 Der Integer Wert wird in 8 Stellen ausgegeben.
 
 2. Was bewirkt die Umwandlungsangabe %10f in der Formatzeichenkette von printf?
-Der Float Wert wird in 8 Stellen als Festkommazahl ausgegeben.
+Der Float Wert wird mit 6 Nachkommastellen als Festkommazahl ausgegeben.
 
-3. Ist %2e eine gültige Umwandlungsangabe in der Formatzeichenkette von printf? Wenn
+3. Ist %2e eine gÃ¼ltige Umwandlungsangabe in der Formatzeichenkette von printf? Wenn
 nein, warum?
-Der Float Wert wird in 8 Stellen als Fließkommazahl ausgegeben.
+Ja, der Float Wert wird als FlieÃŸkommazahl ausgegeben.
 
-4. Ist %h eine gültige Umwandlungsangabe in der Formatzeichenkette von printf?Wenn nein,
+4. Ist %h eine gÃ¼ltige Umwandlungsangabe in der Formatzeichenkette von printf?Wenn nein,
 warum?
 Nein, weil h kein Datentyp ist. 
 
