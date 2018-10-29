@@ -6,5 +6,4 @@ int main(void)
 	scanf("%lf", &eingabe);
 	printf("%f\n%e", eingabe, eingabe);
 	return 0;
-
 }
