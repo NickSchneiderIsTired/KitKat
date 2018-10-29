@@ -2,6 +2,7 @@
 #define M_PI 3.14159265358979323846
 
 double calc_circle_area(double radius);
+
 int main(void)
 {
 	double radius;
@@ -13,6 +14,7 @@ int main(void)
 	radius, calc_circle_area(radius));
 	return 0;
 }
+
 double calc_circle_area(double radius)
 {
 	double circle_area;
