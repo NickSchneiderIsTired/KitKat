@@ -2,7 +2,7 @@
 
 int main(void)
 {
-char a = 'a';
-printf("%c", a);
-return 0;
+  char a = 'a';
+  printf("%c", a);
+  return 0;
 }
