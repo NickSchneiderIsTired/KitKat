@@ -1,1 +1,15 @@
-
+1. false
+2. true
+3. false
+4. false
+5. false
+6. false
+7. true (Tertium non datur)
+8. false (Widerspruch)
+9. true
+10. false
+11. true
+12. false
+13. true
+14. false
+15. true

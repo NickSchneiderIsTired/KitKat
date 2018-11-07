@@ -1,1 +1,6 @@
-TODO
+1. Nein, weil keine Aussage zum negieren in den Klammern steht
+2. Ja
+3. Ja
+4. Nein, die Negierungen beziehen sich auf nichts und keine verbindung von || oder &&
+5. Ja
+6. Nein, es darf kein Leerzeichen zwischen < und = stehen

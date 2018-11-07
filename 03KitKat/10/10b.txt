@@ -1,1 +1,7 @@
-TODO
+A   !A  A||(!A)
+T   F   T
+F   T   T
+
+"Entweder wahr oder falsch" - diese Aussage ist immer wahr,
+ was einer Tautologie entspricht (Tertium non datur)
+

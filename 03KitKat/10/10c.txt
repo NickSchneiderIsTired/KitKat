@@ -1,1 +1,6 @@
-TODO
+A   !A  A&&(!A)
+T   F   F
+F   T   F
+
+Nicht erfüllbar heißt, dass die Aussage niemals wahr werden kann.
+Eine Aussage kann nicht wahr und zugleich falsch sein.
