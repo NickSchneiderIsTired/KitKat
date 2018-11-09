@@ -1,1 +1,17 @@
-TODO
+1. Ist die Zeichenfolge !() ein gültiger Ausdruck in C? Wenn nein, warum?
+Nein, weil in den Klammern nichts steht worauf sich der Operator ! beziehen kann.
+
+2. Ist die Zeichenfolge !!!12 ein gültiger Ausdruck in C? Wenn nein, warum?
+Ja.
+
+3. Ist die Zeichenfolge 14 <= ein gültiger Ausdruck in C? Wenn nein, warum?
+Nein, weil <= ein binärer Operator ist.
+
+4. Ist die Zeichenfolge 0 ! 1 ! ein gültiger Ausdruck in C? Wenn nein, warum?
+Nein, weil die ! Operatoren keine zugehörigen Werte haben.
+
+5. Ist die Zeichenfolge 5 >= x < y ein gültiger Ausdruck in C? Wenn nein, warum?
+Ja.
+
+6. Ist die Zeichenfolge 14 < = x || !y ein gültiger Ausdruck in C? Wenn nein, warum?
+Nein, weil < ein binärer Operator ist.

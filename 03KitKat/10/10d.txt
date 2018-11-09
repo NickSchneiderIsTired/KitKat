@@ -1,1 +1,8 @@
-TODO
+A	B	!(A && B)	!A || !B
+T	T	F		F
+T	F	T		T
+F	T	T		T
+F	F	T		T
+
+
+Zwei Aussagen sind äquivalent, wenn sie nach einsetzen der gleichen Wahrheitswerte immer den gleichen Wahrheitswert haben.

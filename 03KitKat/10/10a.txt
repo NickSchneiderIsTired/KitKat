@@ -1,1 +1,3 @@
-TODO
+A	!A	!!A
+T	F	T
+F	T	F
