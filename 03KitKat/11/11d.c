@@ -3,11 +3,11 @@
 int main(void)
 {
     int a;
-    if (scanf("%i", &a) == 1 && getchar() == '\n' && a > 0 && a < 13){
-        printf("Die Eingabe \"%i\" war gueltig.", a);
+    if((scanf("%i", &a) == 1 && getchar() == '\n') && a >= 1 && a <= 12) {
+        printf("Eingabe erfolgreich\nGelesene Werte: %i", a);
+        return 0;
     } else {
-        printf("Die Eingabe war ungueltig.");
+        printf("Eingabe ungueltig");
         return 1;
     }
-    return 0;
 }

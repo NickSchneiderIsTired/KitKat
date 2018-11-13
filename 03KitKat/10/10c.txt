@@ -1,4 +1,4 @@
-A	!A	A && !A	
+A	!A	A && !A
 T	F	F
 F	T	F
 

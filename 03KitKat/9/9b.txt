@@ -1,44 +1,15 @@
-1. Welchen Wahrheitswert hat der Ausdruck 0?
-false
-
-2. Welchen Wahrheitswert hat der Ausdruck 0.000001?
-true
-
-3. Welchen Wahrheitswert hat der Ausdruck !12345.123?
-false
-
-4. Welchen Wahrheitswert hat der Ausdruck !!!1?
-false
-
-5. Welchen Wahrheitswert hat der Ausdruck 0 >= 1?
-false
-
-6. Welchen Wahrheitswert hat der Ausdruck !(0 < 1)?
-false
-
-7. Welchen Wahrheitswert hat der Ausdruck 0 || 1?
-true
-
-8. Welchen Wahrheitswert hat der Ausdruck !0 && !1?
-false
-
-9. Welchen Wahrheitswert hat der Ausdruck !(0 && 1)?
-true
-
-10. Welchen Wahrheitswert hat der Ausdruck 'A' != 65?
-false
-
-11. Welchen Wahrheitswert hat der Ausdruck 'A' == 'A'?
-true
-
-12. Welchen Wert hat der Ausdruck 1 ? !1 : 1 ?
-!1
-
-13. Welchen Wert hat der Ausdruck 1 ? (0 ? 0 : 1) : 0 ?
-1
-
-14. Welchen Wert hat der Ausdruck !isdigit('0')?
-!1
-
-15. Welchen Wert hat der Ausdruck toupper('k')?
-75
+1. false
+2. true
+3. false
+4. false
+5. false
+6. false
+7. true (Tertium non datur)
+8. false (Widerspruch)
+9. true
+10. false
+11. true
+12. !1
+13. 1
+14. !1
+15. 75

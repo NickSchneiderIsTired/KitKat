@@ -4,11 +4,12 @@
 int main(void)
 {
     char a, b, c;
-    if (scanf("%c%c%c", &a, &b, &c) == 3 && isupper(a) == 1 && getchar() == '\n'){
-        printf("Die Eingabe \"%c%c%c\" war gueltig.", a, b, c);
+    printf("Bitte 3 sichtbare ASCII-Zeichen eingeben:\n");
+    if((scanf("%c %c %c", &a, &b, &c) == 3 && getchar() == '\n') && isupper(a)) {
+        printf("Eingabe erfolgreich\nGelesene Werte: %c, %c, %c", a, b, c);
+        return 0;
     } else {
-        printf("Die Eingabe war ungueltig.");
+        printf("Eingabe ungueltig");
         return 1;
     }
-    return 0;
 }

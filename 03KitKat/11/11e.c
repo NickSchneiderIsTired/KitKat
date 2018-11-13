@@ -2,13 +2,14 @@
 
 int main(void)
 {
-    int a;
-    char x;
-    if (scanf("%i%c", &a, &x) == 2 && getchar() == '\n' && a < 0 && x < 91 && x > 64){
-        printf("Die Eingabe \"%i%c\" war gueltig.", a, x);
-    } else {
-        printf("Die Eingabe war ungueltig.\n");
-        return 1;
+    int i;
+    char c;
+    if(scanf("%i%c", &i, &c) == 2 && getchar() == '\n') {
+        if (i < 0 && c >= 65 && c <= 90) {
+            printf("Eingabe erfolgreich\nGelesene Werte: %i, %c", i, c);
+            return 0;
+        }
     }
-    return 0;
+    printf("Eingabe ungueltig");
+    return 1;
 }

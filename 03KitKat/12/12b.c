@@ -1,24 +1,45 @@
 #include <stdio.h>
 
-void print_communication();
-
-int main (void)
+void print_communication(int value, int address, int write_access)
 {
-    int value, adress, writeaccess;
-    if (scanf("%i\n%i\n%i", &value, &adress, &writeaccess) == 3 && getchar() == '\n' && (writeaccess == 0 || writeaccess == 1)){
-        print_communication(value, adress, writeaccess);
-    } else {
-        printf("Die Eingabe war ungueltig, das Programm wird nun beendet.\n");
-        return 1;
+    switch(write_access) {
+        case 0:
+            printf("Steuerwerk schreibt %i nach AM\n", address);
+            printf("Steuerwerk setzt D auf %i\n", write_access);
+            printf("Steuerwerk sendet A\n");
+            printf("Speicherwerk liest %i von AM\n", address);
+            printf("Speicherwerk sendet Wert in SZ%i\n", address);
+            printf("Speicherwerk sendet T");
+            break;
+        case 1:
+            printf("Steuerwerk schreibt %i nach AM\n", address);
+            printf("Steuerwerk schreibt %i nach WM\n", value);
+            printf("Steuerwerk setzt D auf %i\n", write_access);
+            printf("Steuerwerk sendet A\n");
+            printf("Speicherwerk liest %i von AM\n", address);
+            printf("Speicherwerk liest %i von WM\n", value);
+            printf("Speicherwerk ueberschreibt Inhalt in SZ%i mit %i\n", address, value);
+            printf("Speicherwerk sendet A\n");
+            break;
+        default:
+            printf("Bitte fuer write-access entweder 0 fuer lesen oder 1 fuer schreiben eingeben");
     }
-    return 0;
 }
 
-void print_communication(int value, int adress, int writeaccess)
+int main(void)
 {
-    if (writeaccess == 1){
-        printf("Steuerwerk schreibt %i nach AM\nSteuerwerk schreibt %i nach WM\nSteuerwerk setzt D auf Schreiben(1)\nSteuerwerk sendet A\nSpeicherwerk liest Adresse von AM(%i)\nSpeicherwerk liest Daten von WM(%i)\nSpeicherwerk ueberschreibt Inhalt der SZ%i mit %i\nSpeicherwerk sendet T", adress, value, adress, value, adress, value);
+    int value, address, wa;
+    printf("Bitte Wert, Addresse und write-access mit Leerzeichen getrennt eingeben...\n");
+    if(scanf("%i %i %i", &value, &address, &wa) == 3 && getchar() == '\n') {
+        if(address > 0) {
+            print_communication(value, address, wa);
+            return 0;
+        } else {
+            printf("Bitte positive ganze Zahl als Addresse angeben");
+            return 1;
+        }
     } else {
-        printf("Steuerwerk schreibt %i nach AM\nSteuerwerk setzt D auf Lesen(0)\nSteuerwerk sendet A\nSpeicherwerk liest AM\nSpeicherwerk sendet Wert nach SZ%i\nSpeicherwerk sendet T", adress, adress);
+        printf("Ungueltige Eingabe");
+        return 1;
     }
 }
