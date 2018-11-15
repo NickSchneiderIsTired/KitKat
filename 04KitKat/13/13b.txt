@@ -1,1 +1,10 @@
-TODO
+1. int
+2. int
+3. double
+4. int
+5. double
+6. char
+7. int
+8. int
+9. int
+10. double
