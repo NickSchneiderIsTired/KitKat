@@ -6,22 +6,27 @@ void strdel(char ct[], char c)
     while(ct[length] != '\0') {
         ++length;
     }
-    int positions[length + 1];
-    int i, j;
+    int i;
+    int j;
     for(i = 0; i < length; ++i) {
-        if(ct[i] == c) {
-            for(j = i; j < length - 1; ++j) {
-                ct[j] = ct[j + i];
+        if(ct[i] == c) {{
+            if(i == length - 1) {
+                ct[i] = '\0';
+            } else {
+                for(j = i; j < length - 1; ++j) {
+                    ct[j] = ct[j + i];
+                }
+
+                --length;
             }
-            --length;
         }
     }
 }
 
 int main()
 {
-    char chars[] = "Hello";
-    strdel(chars, 'l');
+    char chars[] = "HHHeelloo";
+    strdel(chars, 'H');
     printf("%s", chars);
     return 0;
 }
