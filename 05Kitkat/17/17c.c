@@ -1,11 +1,9 @@
-void print_rectangle(int lines, int columns)
+void print_rectangle(int lines, int cols)
 {
-    int i, x;
-    for (i = lines; i > 0; --i){
-        x = columns;
-        while (x > 0){
-            printf("0");
-            x -= 1;
+    int i, j;
+    for(i = 0; i < lines; ++i) {
+        for(int j = 0; j < cols; j++) {
+            printf("O");
         }
         printf("\n");
     }

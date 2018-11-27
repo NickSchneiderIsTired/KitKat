@@ -7,7 +7,7 @@ int main(void)
     int x;
     printf("Bitte geben sie eine Zahl zwischen 8 und 40 ein:\n");
     x = read_number();
-    while (x == 0){
+    while (x == -1){
         printf("Die Eingabe war ungueltig, bitte geben sie eine Zahl zwischen und 40 ein:\n");
         x = read_number();
     }
@@ -22,6 +22,6 @@ int read_number(void)
         return a;
     } else {
         fflush(stdin);
-        return 0;
+        return -1;
     }
 }

@@ -1,10 +1,9 @@
 void print_triangle(int n)
 {
-    int i, x;
-    for (i = 0; i <= n; ++i){
-        x = i;
-        for (x = i; x > 0; --x){
-            printf("0");
+    int i, j;
+    for(i = 0; i < n; ++i) {
+        for(j = 0; j <= i; j++) {
+            printf("O");
         }
         printf("\n");
     }

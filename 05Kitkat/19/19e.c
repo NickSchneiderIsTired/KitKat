@@ -1,24 +1,10 @@
-#include <stdio.h>
-
-int f();
-
-int main(void)
-{
-    int w[] = {0,3,8,9,13,14,15};
-    int s = 4;
-    int n = 7;
-    printf("%i\n", f(w, s, n));
-    return 0;
-}
-
-int f(int w[], int s, int n)
+int algorithm(int values[], int s)
 {
     int li = 0;
-    int re = n + 1;
-    int m;
-    while (li < (re - 1)){
-        m = (li + re)/2;
-        if (s <= w[m]){
+    int re = sizeof(values) / sizeof(int) + 1;
+    while(li < re - 1) {
+        int m = (li + re) / 2;
+        if(s <= values[m]) {
             re = m;
         } else {
             li = m;
