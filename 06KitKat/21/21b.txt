@@ -1,1 +1,3 @@
-TODO
+1) gcc -E a.c -o b.c
+2) Quellcode-Datei a.c wird die Objektcode-Datei a.o überführt
+3) gcc a.o b.o c.c
