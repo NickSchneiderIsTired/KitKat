@@ -36,7 +36,7 @@ int main(int argc, char* argv[])
     int i;
     int oc[10];
     if(argc == 1) {
-        printf("ERROR");
+        printf("Bitte Kommandozeilenparameter eingeben!");
         return -1;
     }
     for(i = 1; i < argc; ++i) {
