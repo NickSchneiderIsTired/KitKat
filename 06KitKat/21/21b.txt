@@ -1,1 +1,10 @@
-TODO
+1. Mit welchem Kommandozeilenbefehl erzeugt man zu der Quellcode-Datei a.c den erweiterten
+Quellcode und speichert diesen in der Datei b?
+gcc -E a.c -o b.c
+
+2. Was bewirkt der Kommandozeilenbefehl gcc -c a.c?
+Quellcode-Datei a.c wird die Objektcode-Datei a.o überführt
+
+3. Mit welchem Kommandozeilenbefehl verbindet man die Objektcode-Dateien a.o und b.o
+zu einem Maschinenprogramm c?
+gcc a.o b.o c.c

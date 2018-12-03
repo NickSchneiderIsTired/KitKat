@@ -1,1 +1,33 @@
-TODO
+1. Wie lautet die Anweisung, um eine statische ganzzahlige Variable x mitWert 14 anzulegen?
+static int x = 14;
+
+2. Wie lautet die Anweisung, um ein ganzzahliges Feld v mit 10 Komponenten anzulegen?
+int v[10];
+
+3. Wie lautet die Anweisung, um der 2-ten Komponente eines int-Feldes v den Wert 10
+zuzuweisen?
+v[1] = 10;
+
+4. Geben Sie eine Bedingung an, um zu testen, ob eine Zeichenkette s den Wert "10" hat.
+Tipp: Da eine Bedingung gefordert ist, muss der Ausdruck Ihrer Lösung sich zu einem
+Wert ungleich Null auswerten, wenn die Zeichenkette s den Wert "10" hat. In jedem anderen
+Fall muss sie sich zu 0 auswerten.
+if(strcmp(s, "10"))
+
+5. Geben Sie eine Bedingung an, um zu testen, ob der Inhalt einer Zeichenkette s aus mehr
+als 5 Zeichen besteht.
+if(strlen(s) > 5)
+
+6. Sei s eine Zeichenkette mit Wert "ABC". Geben Sie eine Anweisung an, um in s den Wert
+"xy" zu speichern.
+strcpy(s, "xy");
+
+7. Geben Sie eine Anweisung an, um an den Inhalt einer Zeichenkette s h¨ochstens 5 Zeichen
+des Inhalts einer Zeichenkette t anzuh¨angen.
+strncat(s, t, 5);
+
+8. Was ist der Wert des Ausdrucks atoi("1.2")?
+1
+
+9. Was ist der Wert des Ausdrucks sprintf(s, "%i", 12) f¨ur eine Zeichenkette s?
+"12"

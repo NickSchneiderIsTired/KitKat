@@ -1,1 +1,12 @@
-TODO
+1. Definieren Sie eine symbolische Konstante TRUE mit dem Wert 1.
+#define TRUE 1
+
+2. Definieren Sie ein sicheres Makro zur Berechnung des Minimums zweier Zahlen.
+#define min(a, b) (((a) < (b)) ? (a) : (b))
+
+3. Definieren Sie ein sicheres Makro zum Leeren des Eingabe-Puffers ohne Ber¨ucksichtigung
+von Pufferfehlern.
+#define flush fflush(stdin)
+
+4. Definieren Sie die Bibliotheksfunktion tolower als sicheres Makro.
+#define lower(a) tolower(a)
