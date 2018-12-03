@@ -2,23 +2,19 @@
 #include <stdlib.h>
 #include <time.h>
 
-char zufallsZeichen();
+int random()
+{
+    int a = rand() % 3;
+    switch (a) {
+        case 0 : return 48 + (rand() % 10);
+        case 1 : return 65 + (rand() % 26);
+        case 2 : return 97 + (rand() % 26);
+        default : return -1;
+    }
+}
 
 int main(void)
 {
     srand(time(NULL));
-    printf("%c", zufallsZeichen());
-    return 0;
-}
-
-char zufallsZeichen(void)
-{
-    int x = rand() % 3;
-    if (x == 0){
-        return (48 + rand() % 10);
-    } else if (x == 1) {
-        return (65 + rand() % 26);
-    } else {
-        return (97 + rand() % 26);
-    }
+    printf("%c", random());
 }
