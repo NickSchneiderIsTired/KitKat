@@ -1,12 +1,18 @@
-int read_digit()
+int flush_buff(void) {
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF) {}
+    return c != EOF;
+}
+
+int zahlEinlesen()
 {
-    int a, c;
-    if (scanf("%i", &a) == 1 && a > 0 && a < 13 && (c = getchar()) == '\n'){
-        return a;
-    } else if (c == EOF){
+    int n, a;
+    if(a = scanf("%i", &n) == 1 && n > 0 && n < 13) {
+        return n;
+    } else if(a == EOF){
         return EOF;
     } else {
         flush_buff();
-        return 0;
+        return -1;
     }
 }

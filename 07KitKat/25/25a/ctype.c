@@ -1,5 +1,3 @@
-#include "ctype.h"
-
 int isupper(int c)
 {
     if(c > 64 && c < 91) {

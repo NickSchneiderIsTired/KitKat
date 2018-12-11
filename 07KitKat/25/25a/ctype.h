@@ -1,8 +1,8 @@
-#ifndef HEADER_H_INCLUDED
-#define HEADER_H_INCLUDED
+#ifndef ctype
+#define ctype
 
-int isupper();
-int tolower();
-int isalpha();
+int isupper(int c);
+int tolower(int c);
+int isalpha(int c);
 
 #endif
