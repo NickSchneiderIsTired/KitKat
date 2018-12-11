@@ -7,7 +7,7 @@ int flush_buff(void) {
 int zahlEinlesen()
 {
     int n, a;
-    if(a = scanf("%i", &n) == 1 && n > 0 && n < 13) {
+    if((a = scanf("%i", &n)) == 1 && n > 0 && n < 13 && getchar() == '\n') {
         return n;
     } else if(a == EOF){
         return EOF;
