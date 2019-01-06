@@ -1,1 +1,23 @@
-TODO
+1. int *p;
+2. double *p = &y;
+3. char *p = &c;
+4. int **p;
+5. double *p = NULL;
+6. char *p = w + 3;
+7. *p = 3.0;
+8. ++(*p);
+9. p = w + 1;
+10. &(p[1]);
+11. p[0];
+12. *(v + 2)
+13. v + 1
+14. a
+15. A
+16. 1
+17. b
+18. 1
+19. *p wird kein Adresswert zugeteilt, sondern "a". Es müsste *p = &v[0] heißen.
+20. *p zeigt irgendwo hin, also wird irgendein Wert ausgegeben. (Der wert an irgendeiner Adresse)
+21. v[3] wurde nicht initionalisiert, also hat *p (v[0]) keinen Wert.
+22. w is keine Zeigervariable sondern ein Array, also funktioniert w = v nicht
+
