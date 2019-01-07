@@ -30,9 +30,22 @@ char *my_strpbrk(const char *str1, const char *str2, int m, int n)
     return NULL;
 }*/
 
+char *my_strpbrk3(const char *str1, const char *str2)
+{
+    int i, j;
+    for(i = 0; *(str1 + i) != '\0'; ++i) {
+        for(j = 0; *(str2 + j) != '\0'; ++j) {
+            if(*(str1 + i) == *(str2 + j)) {
+                return str1 + i;
+            }
+        }
+    }
+    return NULL;
+}
+
 int main()
 {
-    char *p = my_strpbrk("ello there", "wasght", 10, 6);
+    char *p = my_strpbrk3("ello there", "wasght");
     printf("%c", *p);
     return 0;
 }
