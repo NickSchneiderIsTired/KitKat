@@ -1,15 +1,11 @@
-char *strrchr(const char *cs, const int c)
+char *my_strrchr(const char* string, int c)
 {
-    int n = 0, i = 0;
-    char *string = NULL;
-    while(*(cs + i) != '\n'){
-        ++i;
-        ++n;
-    }
-    for (i = 0; i < n; ++i){
-        if(*(cs + i) == c){
-            string = cs + i;
+    int i;
+    char *location = NULL;
+    for(i = 0; *(string + i) != '\0'; ++i) {
+        if(*(string + i) == c) {
+            location = string + i;
         }
     }
-    return string;
+    return location;
 }

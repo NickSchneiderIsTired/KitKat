@@ -1,24 +1,12 @@
-char *strpbrk(const char *cs, const char *ct)
+char *my_strpbrk(const char *str1, const char *str2)
 {
-    int n = 0, i = 0, j = 0, m = 0;
-    char *position = NULL;
-
-    while(*(cs + i) != '\n'){
-        ++i;
-        ++n;
-    }
-    while(*(ct + j) != '\n'){
-        ++j;
-        ++m;
-    }
-
-    for (i = 0; i < n; ++i){
-        for (j = 0; j < m; ++j){
-            if (*(cs + i) == *(ct + j)){
-                position = cs + i;
-                return position;
+    int i, j;
+    for(i = 0; *(str1 + i) != '\0'; ++i) {
+        for(j = 0; *(str2 + j) != '\0'; ++j) {
+            if(*(str1 + i) == *(str2 + j)) {
+                return str1 + i;
             }
         }
     }
-    return position;
+    return NULL;
 }
