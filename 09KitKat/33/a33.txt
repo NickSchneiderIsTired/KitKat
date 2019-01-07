@@ -1,1 +1,63 @@
-TODO
+1. Deklarieren Sie einen Zeiger p auf int.
+int *p;
+
+2. Definieren Sie einen Zeiger p, der auf eine double-Variable y zeigt.
+double *p = &y;
+
+3. Sei c eine Variable vom Typ char. Definieren Sie einen Zeiger p mit Bezugsvariable c.
+char *p = &c;
+
+4. Deklarieren Sie einen Zeiger p mit Bezugstyp int*.
+int *p;
+
+5. Definieren Sie einen Zeiger p auf double, der nirgendwohin zeigt.
+double *p;(wenn global) oder double *p = NULL;(wenn lokal)
+
+6. Definieren Sie einen Zeiger p, der auf das vierte Zeichen einer Zeichenkette w zeigt.
+char *p = w + 3;
+
+7. Sei p ein Zeiger auf die double-Variable x. Weisen Sie x mittels Dereferenzierung den Wert
+3.0 zu.
+*p = 3.0;
+
+8. Sei p ein Zeiger auf die int-Variable x. Erh¨ohen Sie den Wert von x mittels Dereferenzierung
+um 1.
+++(*p);
+
+9. Sei p ein Zeiger auf den Anfang der Zeichenkette w. Biegen Sie p auf das zweite Zeichen
+von w um.
+++p;
+
+10. Sei p ein Zeiger. Geben Sie den Ausdruck p + 1 in Feldschreibweise ohne Adressverschiebung
+und Dereferenzierung an.
+&p[1]
+
+11. Sei p ein Zeiger. Geben Sie den Ausdruck *p in Feldschreibweise ohne Adressverschiebung
+und Dereferenzierung an.
+p[0]
+
+12. Sei v ein Feld. Geben Sie den Ausdruck v[2] in Zeigerschreibweise ohne Benutzung des
+Adressoperators oder eines Feldindex an.
+*(v + 2)
+
+13. Sei v ein Feld. Geben Sie den Ausdruck &v[1] in Zeigerschreibweise ohne Benutzung des
+Adressoperators oder eines Feldindex an.
+v + 1
+
+14. a
+
+15. A
+
+16. 1
+
+17. b
+
+18. 1
+
+19. *p = v[0] weißt *p einen Wert zu und keine Adresse. Richtig wäre *p = v
+
+20. *p wurde nicht initialisiert und zeigt daher irgendwohin
+
+21. v wurde nicht initialisiert, v[0] hat also keinen Wert
+
+22. w ist ein Array und kein Zeiger
