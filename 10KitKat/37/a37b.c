@@ -14,8 +14,8 @@ char *safecat(char *s, const char *ct)
 int main()
 {
     char * str1 = malloc(8 * sizeof(char));
-    strcpy(str1, "Pastewka");
     char * str2 = "Stromberg";
+    strcpy(str1, "Pastewka");
     if((str1 = safecat(str1, str2)) != NULL) {
         printf("Victory Royale! %s", str1);
         return 0;
