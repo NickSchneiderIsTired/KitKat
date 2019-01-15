@@ -19,13 +19,3 @@ double frexp(double x, int *exponent)
         return x;
     }
 }
-
-int main () {
-    double x = 1024, fraction;
-    int e;
-
-    fraction = frexp(x, &e);
-    printf("x = %.2f = %.2f * 2^%d\n", x, fraction, e);
-
-    return 0;
-}
