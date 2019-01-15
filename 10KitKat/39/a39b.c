@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void)
+int main()
 {
-    char a[10], *p;
-    double d;
-    scanf("%s", a);
-    d = strtod(a, &p);
-    printf("%s, %f\n", a, d);
+    char str[10], *p;
+    double value;
+    scanf("%s", str);
+    value = strtod(str, &p);
+    printf("%f, %s", value, p);
     return 0;
 }

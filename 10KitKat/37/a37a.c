@@ -8,11 +8,12 @@ int main(void)
     int v[] = {7, 8, 9, 10};
     int *copy = cpy_array(v, 4);
 
-    if (copy == NULL){
+    if (copy == NULL) {
         printf("Beim Kopieren ist ein Fehler aufgetreten.\n");
         return 1;
     } else {
         printf("Kopieren erfolgreich.\nAnfang der Kopie: %i", copy[0]);
+        free(copy);
         return 0;
     }
 }

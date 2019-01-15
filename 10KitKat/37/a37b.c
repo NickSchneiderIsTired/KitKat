@@ -2,27 +2,26 @@
 #include <stdlib.h>
 #include <string.h>
 
-char *safecat();
-
-int main(void)
-{
-    char *s = malloc(8 * sizeof(char)), *ct = "Stromberg";
-    strcpy(s, "Pastewka");
-    if ((s = safecat(s, ct)) != NULL){
-        printf("Anhaengen erfolgreich: %s\n", s);
-        return 0;
-    } else {
-        printf("Beim Anhaengen ist ein Fehler aufgetreten.\n");
-        return 1;
-    }
-
-}
-
 char *safecat(char *s, const char *ct)
 {
-    if((realloc(s, (strlen(s) + strlen(ct)) * sizeof(char))) == NULL){
+    if((realloc(s, (strlen(s) + strlen(ct)) * sizeof(char))) == NULL) {
         return NULL;
     }
     strcat(s, ct);
     return s;
+}
+
+int main()
+{
+    char * str1 = malloc(8 * sizeof(char));
+    char * str2 = "Stromberg";
+    strcpy(str1, "Pastewka");
+    if((str1 = safecat(str1, str2)) != NULL) {
+        printf("Anhaengen erfolgreich: %s\n", str1);
+        free(str1);
+        return 0;
+    } else {
+        printf("Fehler beim Anhaengen");
+        return 1;
+    }
 }
