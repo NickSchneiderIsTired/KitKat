@@ -1,10 +1,10 @@
 #include <math.h>
 
-int function(int n)
+int func(unsigned int n)
 {
     int t = 2;
-    while (t <= sqrt(n)){
-        if (n % t != 0){
+    while(t <= sqrt(n)) {
+        if(n % t != 0) {
             ++t;
         } else {
             return 0;
@@ -12,4 +12,3 @@ int function(int n)
     }
     return 1;
 }
-

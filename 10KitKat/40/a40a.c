@@ -4,7 +4,10 @@ int **matrix_cpy(int **m, int ze, int sp) /* sp wird nicht gebraucht wegen flach
 {
     int **newMatrix, i;
     newMatrix = malloc(ze * sizeof(int*));
-    if(!m) return NULL;
+    if(newMatrix == NULL) {
+        free(newMatrix);
+        return NULL;
+    }
     for(i = 0; i < ze; ++i) {
         newMatrix[i] = m[i];
     }
