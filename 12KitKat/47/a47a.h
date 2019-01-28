@@ -1,8 +1,8 @@
 #ifdef RECHTECK_INCLUDED
 #define RECHTECK_INCLUDED
 
-#define MIN_WIDTH 100
-#define MIN_LENGTH 100
+#define MIN_WIDTH 0
+#define MIN_LENGTH 0
 
 typedef struct _rechteck {
     double width;
