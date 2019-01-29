@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    Artikel a;
+    ARTIKEL a;
     if (artikel_new(&a, "Bleifstift", 0.0, 0.75) == 1){
         if (artikel_set_rabatt(&a, 10.0) == 1){
             printf("Der Rabatt wurde geändert.\n");
